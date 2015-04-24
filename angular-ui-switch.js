@@ -11,7 +11,7 @@ angular.module('uiSwitch', [])
       html +=   ' class="switch' + (attrs.class ? ' ' + attrs.class : '') + '"';
       html +=   attrs.ngModel ? ' ng-click="' + attrs.ngModel + '=!' + attrs.ngModel + (attrs.ngChange ? '; ' + attrs.ngChange + '()"' : '"') : '';
       html +=   ' ng-class="{ checked:' + attrs.ngModel + ' }"';
-      html +=   '>';
+      html +=   'ng-transclude>';
       html +=   '<small></small>';
       html +=   '<input type="checkbox"';
       html +=     attrs.id ? ' id="' + attrs.id + '"' : '';
